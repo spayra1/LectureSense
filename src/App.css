@@ -37,26 +37,25 @@
 }
 
 .teacher-section {
-  border-left: 0px solid rgb(87, 87, 87);
+  border-left: px solid rgb(87, 87, 87);
 }
 
 .row {
   display: flex;
 }
 
-.btn {
-  background-color: #32b7c6;
-}
+
 
 .bar {
   color: white;
-  width: 100%;
+  width: 90%;
   background-color: #34bac8;
-  margin: -20px;
+  margin-top: -20px;
   margin-bottom: 30px;
   padding: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 1px 2px 4px gray;
 }
 
 .col {
