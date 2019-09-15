@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from "@material-ui/core/Button"
+import TextField from '@material-ui/core/TextField';
 
 class QuestionForm extends React.Component {
     constructor(props) {
@@ -23,6 +24,15 @@ class QuestionForm extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
+                <TextField
+            id="standard-name"
+            label="Question"
+            className="input"
+            value={this.state.value}
+            onChange={this.handleChange}
+            margin="normal"
+      />
+                {/*
                 <label>
                     Question:  
                     <input
@@ -33,7 +43,7 @@ class QuestionForm extends React.Component {
                         onChange={this.handleChange}
                     />
                 </label>
-                <button onClick={this.handleSubmit}>Submit</button>
+                */}
             </form>
         )
     }
