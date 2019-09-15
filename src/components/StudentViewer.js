@@ -20,7 +20,6 @@ const StudentViewer = ({q}) => {
 
     return (
     <div style={{backgroundColor: '', height: '80%'}}>
-        <br/>
         <h3>Questions asked:</h3>
         <table className="questions-table">
             <tr>
