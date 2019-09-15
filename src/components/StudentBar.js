@@ -1,7 +1,7 @@
 import React from 'react';
 
 const StudentBar = () => (
-    <div height="500px">
+    <div className="bar">
         <h1>{"Student View"}</h1>
     </div>
 );

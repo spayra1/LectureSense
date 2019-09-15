@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   display: flex;
-  background-color: rgb(232, 206, 8);
+  background-color: rgb(238, 214, 37);
 }
 
 .App-logo {
@@ -33,7 +33,7 @@
 }
 
 .student-section {
-  border-right: 3px solid #eee;
+  border-right: 2px solid rgb(87, 87, 87);
 }
 
 .row {
@@ -42,6 +42,14 @@
 
 .btn {
   background-color: #32b7c6;
+}
+
+.bar {
+  color: white;
+  background-color: rgb(0, 114, 235);
+  margin: -10px;
+  margin-bottom: 0px;
+  padding: 5px;
 }
 
 .col {
