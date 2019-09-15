@@ -32,7 +32,7 @@ class QuestionForm extends React.Component {
                         onChange={this.handleChange}
                     />
                 </label>
-                <Button variant="container" color="primary" onClick={this.handleSubmit}>Submit</Button>
+                <Button variant="container" color="solid black" onClick={this.handleSubmit}>Submit</Button>
             </form>
         )
     }

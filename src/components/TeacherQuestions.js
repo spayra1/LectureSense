@@ -30,7 +30,6 @@ const TeacherQuestions = ({n}) => {
         <h3>Questions asked:</h3>
         <br />
         <p>{mapQuestions(questionList)}</p>
-        <label>This is the number!!!: {n}</label>
     </div>
     );
 }
