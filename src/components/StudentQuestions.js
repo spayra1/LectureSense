@@ -7,8 +7,6 @@ const StudentQuestions = ({q, changeQ}) => {
     <div style={{ backgroundColor: '', height: '100%', width: '25vw', borderRight: '1.5px solid #eceff1'}}>
         <h3>Ask a question!</h3>
         <QuestionForm q={q} changeQ={changeQ}/>
-
-        <button onClick={() => changeQ()}>ChangeQ button</button>
     </div>
     )
 };
