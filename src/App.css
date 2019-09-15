@@ -27,13 +27,17 @@
 
 .student-section, .teacher-section {
   flex-grow: 0;
-  min-width: 50%;
+  min-width: 45%;
   padding: 10px;
   height: 100vh;
 }
 
 .student-section {
   border-right: 0px solid rgb(87, 87, 87);
+}
+
+.slider {
+  width: 40%;
 }
 
 .teacher-section {

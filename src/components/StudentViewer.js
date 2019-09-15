@@ -19,7 +19,7 @@ const StudentViewer = ({q}) => {
     questionList.sort(sortByVotes);
 
     return (
-    <div style={{backgroundColor: '', height: '80%'}}>
+    <div style={{backgroundColor: '', height: '80%', paddingLeft: 20}}>
         <br/>
         <h3>Questions asked:</h3>
         <table className="questions-table">

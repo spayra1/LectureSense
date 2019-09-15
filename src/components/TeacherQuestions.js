@@ -21,7 +21,7 @@ const TeacherQuestions = ({q}) => {
     questionList.sort(sortByVotes);
 
     return (
-    <div style={{backgroundColor: '', height: '100%'}}>
+    <div style={{backgroundColor: '', height: '100%', paddingLeft: 15}}>
         <h3>Questions asked: </h3>
         <table className="questions-table">
             <tr>
