@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import QuestionForm from './QuestionForm';
 
-const StudentQuestions = ({n, changeNumber}) => {
+const StudentQuestions = ({q, changeQ}) => {
 
     return (
     <div style={{ backgroundColor: '', height: '100%', width: '25vw', borderRight: '1.5px solid #eceff1'}}>
         <h3>Ask a question!</h3>
-        <button onClick={() => changeNumber(n + 1)}>Click me!</button>
+        <QuestionForm q={q} changeQ={changeQ}/>
+
+        <button onClick={() => changeQ()}>ChangeQ button</button>
     </div>
     )
 };
