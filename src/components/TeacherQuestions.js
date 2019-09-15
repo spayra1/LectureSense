@@ -8,4 +8,4 @@ const TeacherQuestions = ({n}) => (
     </div>
 );
 
-export default TeacherView;
+export default TeacherQuestions;

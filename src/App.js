@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import StudentView from './components/StudentFeedback';
-import TeacherView from './components/TeacherQuestions';
+import StudentFeedback from './components/StudentFeedback';
+import StudentQuestions from './components/StudentQuestions';
+import TeacherFeedback from './components/TeacherFeedback';
+import TeacherQuestions from './components/TeacherQuestions';
 
 function App() {
   const [number, getNumber] = useState(0);

@@ -10,4 +10,4 @@ const StudentQuestions = ({n, changeNumber}) => {
     )
 };
 
-export default StudentView;
+export default StudentQuestions;
