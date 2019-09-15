@@ -1,0 +1,10 @@
+.question {
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.question .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
