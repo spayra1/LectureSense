@@ -19,6 +19,7 @@ class QuestionForm extends React.Component {
         // alert('A question was submitted: ' + this.state.value);
         event.preventDefault();
         this.props.changeQ(this.state.value);
+        this.setState({value: ''});
     }
 
     render() {
