@@ -1,12 +1,8 @@
 import React from 'react';
 import './css/Question.css';
 
-const TeacherQuestions = ({n}) => {
-    let questionList = [
-        {id: 1, question: "How are you?", votes: 100, studentName: "james"},
-        {id: 2, question: "Hey", votes: 8, studentName: "packard"},
-        {id: 3, question: "Okay", votes: 50, studentName: "english"}
-    ];
+const TeacherQuestions = ({q}) => {
+    let questionList = q
     
     function sortByVotes(entry1, entry2){
         return entry2.votes - entry1.votes;

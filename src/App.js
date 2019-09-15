@@ -9,7 +9,8 @@ import StudentQuestions from './components/StudentQuestions';
 import StudentViewer from './components/StudentViewer';
 import TeacherFeedback from './components/TeacherFeedback';
 import TeacherQuestions from './components/TeacherQuestions';
-import QuestionForm from './components/StudentBar';
+import TeacherStatistics from './components/TeacherStatistics';
+
 
 function App() {
   const [slower, setSlower] = useState(0);
@@ -19,12 +20,14 @@ function App() {
   const [question, setQuestion] = useState("");
 
   const [questionList, setQuestionList] = useState([
-    {id: 0, question: "How are you?", votes: 0, studentName: "james"}
+    {id: 1, question: "How are you?", votes: 100, studentName: "james"},
+    {id: 2, question: "Hey", votes: 8, studentName: "packard"},
+    {id: 3, question: "Okay", votes: 50, studentName: "english"}
   ]);
 
   const updateQuestionList = q => {
     setQuestion(q);
-    setQuestionList([...questionList, q]);
+    questionList.push({id: questionList.length+1, question: q, votes: 1, studentName: "John Doe"});
   }
 
 
@@ -35,8 +38,9 @@ function App() {
           <StudentBar/>
           <div class="row">
             <div class="col">
-            <StudentQuestions q={question} changeQ={updateQuestionList}/>
-            <StudentViewer q={question} changeQ={updateQuestionList}/>
+            <StudentQuestions q={question} ql={questionList} changeQ={updateQuestionList}/>
+            <br />
+            <StudentViewer q={questionList}/>
             </div>
             <div class="col">
             <StudentFeedback s={slower} ss={setSlower} l={louder} sl={setLouder} b={bigger} sb={setBigger}/>
@@ -47,10 +51,13 @@ function App() {
           <TeacherBar/>
           <div class="row">
             <div class="col">
-            <TeacherQuestions q={question}/>
-            </div>
-            <div class="col">
             <TeacherFeedback s={slower} l={louder} b={bigger}/>
+            <br/>
+            <br/>
+            <br/>
+            <TeacherQuestions q={questionList}/>
+            <br/>
+            <TeacherStatistics s={slower} l={louder} b={bigger}/>
             </div>
           </div>
         </div>
