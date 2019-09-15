@@ -28,6 +28,7 @@ class QuestionForm extends React.Component {
                     <input
                         type="text"
                         name="question"
+                        className="input"
                         value={this.state.value}
                         onChange={this.handleChange}
                     />

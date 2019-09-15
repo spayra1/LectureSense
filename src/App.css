@@ -1,6 +1,11 @@
+.body {
+  background-color: lightblue;
+}
+
 .App {
   text-align: center;
   display: flex;
+  background-color: rgb(195, 223, 233);
 }
 
 .App-logo {
@@ -38,6 +43,29 @@
 .row {
   display: flex;
 }
+
+.btn {
+  position: relative;
+
+
+  display: flex;
+  margin: 15px;
+  padding: 100px;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #3d68f5;
+  color: #ecf0f1;
+  
+  transition: background-color .3s;
+}
+
+
 
 .col {
   flex-grow: 1;
