@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -21,6 +22,33 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.student-section, .teacher-section {
+  flex-grow: 1;
+  min-width: 49%;
+  padding: 5px;
+  height: 100vh;
+}
+
+.student-section {
+  border-right: 3px solid #eee;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-grow: 1;
+  min-width: 49%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+}
+
+.col:first-child {
+  border-right: 3px solid #eee;
 }
 
 @keyframes App-logo-spin {

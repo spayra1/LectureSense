@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from "@material-ui/core/Button"
 
 class QuestionForm extends React.Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class QuestionForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>
-                    Question:
+                    Question:  
                     <input
                         type="text"
                         name="question"
@@ -31,7 +32,7 @@ class QuestionForm extends React.Component {
                         onChange={this.handleChange}
                     />
                 </label>
-                <input type="submit" value="Submit"/>
+                <Button variant="container" color="primary" onClick={this.handleSubmit}>Submit</Button>
             </form>
         )
     }
