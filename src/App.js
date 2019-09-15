@@ -54,7 +54,6 @@ function App() {
             <TeacherFeedback s={slower} l={louder} b={bigger}/>
             <br/>
             <br/>
-            <br/>
             <TeacherQuestions q={questionList}/>
             <br/>
             <TeacherStatistics s={slower} l={louder} b={bigger}/>

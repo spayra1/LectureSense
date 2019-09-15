@@ -22,7 +22,6 @@ const TeacherQuestions = ({q}) => {
     return (
     <div style={{backgroundColor: '', height: '100%'}}>
         <h3>Questions asked:</h3>
-        <br />
         <table className="questions-table">
             <tr>
                 <th>Points</th>
