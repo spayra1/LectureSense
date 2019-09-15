@@ -1,10 +1,12 @@
 import React from 'react';
 
-const TeacherFeedback = ({n}) => (
-    <div style={{backgroundColor: ''}}>
+const TeacherFeedback = ({s, l, b}) => (
+    <div class = "col" style={{backgroundColor: ''}}>
         <h3>Live feedback:</h3>
         <br />
-        <label>This is the number!!!: {n}</label>
+        <label>Slow down: {s}</label>
+        <label>Speak louder: {l}</label>
+        <label>Write biger: {b}</label>
     </div>
 );
 

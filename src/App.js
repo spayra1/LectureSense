@@ -12,7 +12,10 @@ import TeacherQuestions from './components/TeacherQuestions';
 import QuestionForm from './components/StudentBar';
 
 function App() {
-  const [number, getNumber] = useState(0);
+  const [slower, setSlower] = useState(0);
+  const [louder, setLouder] = useState(0);
+  const [bigger, setBigger] = useState(0);
+
   const [question, setQuestion] = useState("");
 
   const [questionList, setQuestionList] = useState([
@@ -35,7 +38,7 @@ function App() {
             <StudentViewer q={question} changeQ={updateQuestionList}/>
             </div>
             <div class="col">
-            <StudentFeedback n={number} changeNumber={getNumber} />
+            <StudentFeedback s={slower} ss={setSlower} l={louder} sl={setLouder} b={bigger} sb={setBigger}/>
             </div>
           </div>
         </div>
@@ -46,7 +49,7 @@ function App() {
             <TeacherQuestions q={question}/>
             </div>
             <div class="col">
-            <TeacherFeedback n={number}/>
+            <TeacherFeedback s={slower} l={louder} b={bigger}/>
             </div>
           </div>
         </div>
