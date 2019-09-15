@@ -1,10 +1,7 @@
-.question {
-  padding: 20px;
-  margin-right: 50px;
+.questions-table {
+  width: 100%;
 }
 
-.question .content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.questions-table tr {
+  border-bottom: 2px solid #aaa;
 }

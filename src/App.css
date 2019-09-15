@@ -48,7 +48,7 @@
 }
 
 .col:first-child {
-  border-right: 3px solid #eee;
+  border-right: 3px solid #fff;
 }
 
 @keyframes App-logo-spin {

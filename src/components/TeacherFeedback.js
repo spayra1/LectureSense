@@ -6,7 +6,7 @@ const TeacherFeedback = ({s, l, b}) => (
         <br />
         <label>Slow down: {s}</label>
         <label>Speak louder: {l}</label>
-        <label>Write biger: {b}</label>
+        <label>Write bigger: {b}</label>
     </div>
 );
 

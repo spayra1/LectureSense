@@ -14,22 +14,27 @@ const TeacherQuestions = ({n}) => {
     
     function mapQuestions(questions) { 
         return questions.map(q =>
-        <div key={q.id} className="question">
-            <div className="content">
-                <strong>{q.question}</strong>
-                <span>{q.votes}</span>
-            </div>
-            <p>{q.studentName}</p>
-        </div>)
+        <tr key={q.id}>
+            <td>{q.votes}</td>
+            <td>{q.question}</td>
+            <td>{q.studentName}</td>
+        </tr>)
     }
     
     questionList.sort(sortByVotes);
 
     return (
-    <div style={{backgroundColor: '', height: '100%', width: '25vw', borderRight: '1.5px solid #eceff1'}}>
+    <div style={{backgroundColor: '', height: '100%'}}>
         <h3>Questions asked:</h3>
         <br />
-        <p>{mapQuestions(questionList)}</p>
+        <table className="questions-table">
+            <tr>
+                <th>Points</th>
+                <th>Question</th>
+                <th>Student</th>
+            </tr>
+            {mapQuestions(questionList)}
+        </table>
     </div>
     );
 }
