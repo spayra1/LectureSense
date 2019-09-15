@@ -16,6 +16,7 @@ function App() {
   const [slower, setSlower] = useState(0);
   const [louder, setLouder] = useState(0);
   const [bigger, setBigger] = useState(0);
+  const [comprehension, setComprehension] = useState(0);
 
   const [question, setQuestion] = useState("");
 
@@ -52,6 +53,7 @@ function App() {
           <div class="row">
             <div class="col">
             <TeacherFeedback s={slower} l={louder} b={bigger}/>
+            <br/>
             <br/>
             <br/>
             <TeacherQuestions q={questionList}/>

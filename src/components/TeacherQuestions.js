@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Question.css';
+import Divider from '@material-ui/core/Divider';
 
 const TeacherQuestions = ({q}) => {
     let questionList = q
@@ -10,18 +11,18 @@ const TeacherQuestions = ({q}) => {
     
     function mapQuestions(questions) { 
         return questions.map(q =>
-        <tr key={q.id}>
+        <tr key={q.id} className="question">
             <td>{q.votes}</td>
             <td>{q.question}</td>
-            <td>{q.studentName}</td>
+            <td>{q.studentName}</td>    
         </tr>)
     }
     
     questionList.sort(sortByVotes);
 
     return (
-    <div style={{backgroundColor: '', height: '100%'}}>
-        <h3>Questions asked:</h3>
+    <div style={{backgroundColor: '', height: '100%', paddingLeft: 15}}>
+        <h3>Questions asked: </h3>
         <table className="questions-table">
             <tr>
                 <th>Points</th>

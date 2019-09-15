@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   display: flex;
-  background-color: rgb(232, 206, 8);
+  background-color: rgb(238, 214, 37);
 }
 
 .App-logo {
@@ -26,27 +26,45 @@
 }
 
 .student-section, .teacher-section {
-  flex-grow: 1;
-  min-width: 49%;
-  padding: 5px;
+  flex-grow: 0;
+  min-width: 45%;
+  padding: 10px;
   height: 100vh;
 }
 
 .student-section {
-  border-right: 3px solid #eee;
+  border-right: 0px solid rgb(87, 87, 87);
+}
+
+.slider {
+  width: 40%;
+}
+
+.teacher-section {
+  border-left: px solid rgb(87, 87, 87);
 }
 
 .row {
   display: flex;
 }
 
-.btn {
-  background-color: #32b7c6;
+
+
+.bar {
+  color: white;
+  width: 90%;
+  background-color: #34bac8;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 2px 4px gray;
 }
 
 .col {
   flex-grow: 1;
-  min-width: 49%;
+  min-width: 50%;
   display: flex;
   flex-direction: column;
   height: 40%;

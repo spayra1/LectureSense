@@ -19,6 +19,7 @@ class QuestionForm extends React.Component {
         // alert('A question was submitted: ' + this.state.value);
         event.preventDefault();
         this.props.changeQ(this.state.value);
+        this.setState({value: ''});
     }
 
     render() {
@@ -31,6 +32,7 @@ class QuestionForm extends React.Component {
             value={this.state.value}
             onChange={this.handleChange}
             margin="normal"
+            variant="filled"
       />
                 {/*
                 <label>

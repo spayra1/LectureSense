@@ -1,7 +1,10 @@
 .questions-table {
-  width: 100%;
+  width: 90%;
+  background-color: rgb(255, 251, 140);
+  border-radius: 6px;
+  padding: 20px;
 }
 
-.questions-table tr {
-  border-bottom: 2px solid #aaa;
+.questions-table {
+
 }
