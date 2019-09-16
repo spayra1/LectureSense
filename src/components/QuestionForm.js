@@ -22,8 +22,11 @@ class QuestionForm extends React.Component {
         this.setState({value: ''});
     }
 
+      
+
     render() {
         return (
+            <div>
             <form onSubmit={this.handleSubmit}>
                 <TextField
             id="standard-name"
@@ -47,6 +50,8 @@ class QuestionForm extends React.Component {
                 </label>
                 */}
             </form>
+            
+            </div>
         )
     }
 }
